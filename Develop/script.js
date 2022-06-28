@@ -18,6 +18,12 @@ function generatePassword() {
     text = "Hello " + person + "! How are you today?";
   }
   document.getElementById("generate").innerHTML = text;
+
+
+  var parameters = getParameters ();
+
+  for (i=0, i<parameters.length; i++)
+
 }}
 // Write password to the #password input
 function writePassword() {
@@ -25,10 +31,8 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
-  return password
-
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
