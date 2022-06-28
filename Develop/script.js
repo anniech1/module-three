@@ -27,41 +27,45 @@ function generatePassword() {
 
     var lowercaseInput = prompt("Would you like lowercase characters in your password? Type yes or no as your response.");
       if (lowercaseInput == "Yes" || lowercaseInput == "yes") {
-      alert("Thank you!")
-      passwordGenerated +=lowercaseInput;
+        alert("Thank you!")
+        passwordGenerated +=lowercaseInput;
 
       else (lowercaseInput != "yes")
         alert("Thank you!")
+        passwordGenerated
       }
 
     var uppercaseInput = prompt("Would you like uppercase characters in your password? Type yes or no as your response.");
       if (uppercaseInput == "Yes" || uppercaseInput == "yes") {
-      alert("Thank you!")
-      passwordGenerated += uppercaseInput;
+        alert("Thank you!")
+        passwordGenerated += uppercaseInput;
 
       else (uppercaseInput != "yes")
         alert("Thank you!")
+        passwordGenerated
       }
 
     var numericInput = prompt("Would you like numbers in your password? Type yes or no as your response.");
       if (numericInput == "Yes" || numericInput == "yes") {
-      alert("Thank you!")
-      passwordGenerated += numericInput;
+        alert("Thank you!")
+        passwordGenerated += numericInput;
 
       else (lowercaseInput != "yes")
         alert("Thank you!")
+        passwordGenerated
       }
 
     var specialInput = prompt("Would you like special characters in your password? Type yes or no as your response.");
       if (numericInput == "Yes" || numericInput == "yes") {
-      alert("Thank you!")
-      passwordGenerated += specialInput;
+        alert("Thank you!")
+        passwordGenerated += specialInput;
 
       else (numericInput != "yes")
         alert("Thank you!")
+        passwordGenerated
     }
 
-  for (var i = 0; i <= length; i++) {
+  for (var i = 0; i <= lengthInput; i++) {
     var randomNumber = Math.floor(Math.random() * lengthInput);
     password += passwordGenerated.substring(randomNumber, randomNumber +1);
   }
