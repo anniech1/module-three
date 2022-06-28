@@ -1,4 +1,6 @@
 # Password Generator Starter Code
 For this module I was unable to complete all of the objective criteria, and ran into issues with my prompts not popping up after I respaced the javascript code. However, I can describe what I did in order to meet criteria. 
+
 First, I defined all of my variables, which in this project are the character types. I then ensured that when the button was clicked on, it would start a function which could return a random but defined/customized string of characters. I did this by prompting the user to input there length, as well as by answering 'yes' to a series of prompts about the other characters. If the user responded with anything other than yes, then the password generated would remain the same. I stored these responses under new variables with the additional term "input" attached. 
+
 At the culimination of these prompts, where the user has decided the password length and whether or not it includes uppercase, lowercase, special characters, and numbers, I included a for and then ensured that the password generated would be from a random selection of previously included and defined characters. I then wrote the password for the #password input so that it could be outputted when the generatePassword function ran.
