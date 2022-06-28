@@ -8,11 +8,9 @@ var special = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
-
   var element = document.getElementById("generate");
-  element.onclick = function(event) {
-  console.log(event);
-
+  element.onclick = function(generatePassword) {
+  console.log(generatePassword);
   var lowercase = prompt("Would you like lowercase charecters in your password? Type yes or no as your response.");
   if (person == "Yes" || person == "yes") {
     text = "User cancelled the prompt.";
