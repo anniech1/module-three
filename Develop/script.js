@@ -60,13 +60,13 @@ function generatePassword() {
       else (numericInput != "yes")
         alert("Thank you!")
     }
+
+  for (var i = 0; i <= length; i++) {
+    var randomNumber = Math.floor(Math.random() * chars.length);
+    password += passwordGenerated.substring(randomNumber, randomNumber +1);
   }
 
-
-for (var i = 0; i <= length; i++) {
-  var randomNumber = Math.floor(Math.random() * chars.length);
-  password += passwordGenerated.substring(randomNumber, randomNumber +1);
- }
+  }
 
 
 // Write password to the #password input
