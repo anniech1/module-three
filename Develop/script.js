@@ -19,14 +19,33 @@ var generateBtn = document.querySelector("#generate");
         alert("Thank you!")
       console.log(length)
       }}
+      var length = parseInt
       document.getElementById("generate").innerHTML = text;
 
-    var lowercase = prompt("Would you like lowercase charecters in your password? Type yes or no as your response.");
-  if (person == "Yes" || person == "yes") {
-    text = "";
-  } else {
-    text = "Hello " + person + "! How are you today?";
-  }
+    var lowercase = prompt("Would you like lowercase characters in your password? Type yes or no as your response.");
+      if (person == "Yes" || person == "yes") {
+        alert("Thank you!");
+      } else {
+        alert("Thank you!");
+      }
+    var uppercase = prompt("Would you like uppercase characters in your password? Type yes or no as your response.");
+    if (person == "Yes" || person == "yes") {
+      alert("Thank you!");
+    } else {
+      alert("Thank you!");
+    }
+    var numeric = prompt("Would you like numbers in your password? Type yes or no as your response.");
+    if (person == "Yes" || person == "yes") {
+      alert("Thank you!");
+    } else {
+      alert("Thank you!");
+    }
+    var special = prompt("Would you like special characters in your password? Type yes or no as your response.");
+    if (person == "Yes" || person == "yes") {
+      alert("Thank you!");
+    } else {
+      alert("Thank you!");
+    }
   document.getElementById("generate").innerHTML = text;
   }
 
@@ -46,6 +65,6 @@ var generateBtn = document.querySelector("#generate");
 //   passwordText.value = password;
 // }
 
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
 
