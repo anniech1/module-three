@@ -15,52 +15,52 @@ function generatePassword() {
     var element = document.getElementById("generate");
     element.onclick = function(generatePassword) {
     console.log(generatePassword);}
-    document.getElementById("generate").innerHTML = text;}
+    document.getElementById("generate").innerHTML = text;
 
-var lengthInput = prompt("How long will your password be? Select a number from 8 to 128")
-  lengthInput = parseInt(lengthInput)
+    var lengthInput = prompt("How long will your password be? Select a number from 8 to 128")
+      lengthInput = parseInt(lengthInput)
     if (lengthInput < 8 || lengthInput >128) {
       alert("Please select a number from 8-128!")
     else (lengthInput)
         alert("Thank you!")
     }
 
-var lowercaseInput = prompt("Would you like lowercase characters in your password? Type yes or no as your response.");
-    if (lowercaseInput == "Yes" || lowercaseInput == "yes") {
+    var lowercaseInput = prompt("Would you like lowercase characters in your password? Type yes or no as your response.");
+      if (lowercaseInput == "Yes" || lowercaseInput == "yes") {
       alert("Thank you!")
       passwordGenerated +=lowercaseInput;
 
-    else (lowercaseInput != "yes")
+      else (lowercaseInput != "yes")
         alert("Thank you!")
-    }
+      }
 
-var uppercaseInput = prompt("Would you like uppercase characters in your password? Type yes or no as your response.");
-    if (uppercaseInput == "Yes" || uppercaseInput == "yes") {
+    var uppercaseInput = prompt("Would you like uppercase characters in your password? Type yes or no as your response.");
+      if (uppercaseInput == "Yes" || uppercaseInput == "yes") {
       alert("Thank you!")
       passwordGenerated += uppercaseInput;
 
-    else (uppercaseInput != "yes")
+      else (uppercaseInput != "yes")
         alert("Thank you!")
-    }
+      }
 
-var numericInput = prompt("Would you like numbers in your password? Type yes or no as your response.");
-    if (numericInput == "Yes" || numericInput == "yes") {
+    var numericInput = prompt("Would you like numbers in your password? Type yes or no as your response.");
+      if (numericInput == "Yes" || numericInput == "yes") {
       alert("Thank you!")
       passwordGenerated += numericInput;
 
-    else (lowercaseInput != "yes")
+      else (lowercaseInput != "yes")
         alert("Thank you!")
-    }
+      }
 
-var specialInput = prompt("Would you like special characters in your password? Type yes or no as your response.");
-    if (numericInput == "Yes" || numericInput == "yes") {
+    var specialInput = prompt("Would you like special characters in your password? Type yes or no as your response.");
+      if (numericInput == "Yes" || numericInput == "yes") {
       alert("Thank you!")
       passwordGenerated += specialInput;
 
-    else (numericInput != "yes")
+      else (numericInput != "yes")
         alert("Thank you!")
     }
-
+  }
 
 
 for (var i = 0; i <= length; i++) {
@@ -71,6 +71,7 @@ for (var i = 0; i <= length; i++) {
 
 // Write password to the #password input
 function writePassword() {
+  var passwordGenerated = password
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
